@@ -301,5 +301,8 @@ private fun ColorInfo.asAlgorithmColorInfo()
 private fun Gains.asAlgorithmGains()
         = Algorithm.Gains(r, g, b)
 
-private fun Matrix.asAlgorithmMatrix()
-        = Algorithm.Matrix()
+private fun Matrix.asAlgorithmMatrix() = Algorithm.Matrix(
+        elements[0].toFloat(), elements[1].toFloat(), elements[2].toFloat(),
+        elements[3].toFloat(), elements[4].toFloat(), elements[5].toFloat(),
+        elements[6].toFloat(), elements[7].toFloat(), elements[8].toFloat()
+)
